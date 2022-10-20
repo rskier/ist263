@@ -1,0 +1,36 @@
+body{
+    background-color: #4a6163;
+    color:#f9faf4;
+}
+a {
+    color:#f17a7e;
+}
+h1, h2{
+    color:#ffc94b;
+}
+nav {
+    background-color:#F9A66C;
+    padding:10px;
+    margin-bottom:30px;
+}
+nav a {
+    color: #f9faf4;
+}
+nav a:hover {
+    background-color:#f17a7e
+}
+.quote {
+    float:right;
+}
+.top, .bottom {
+    display:flex;
+    background-color: #b4b4b4;
+    margin: 10px;
+    padding:15px;
+    border-radius: 1em;
+    align-items: center;
+}
+
+.address, .mail, .form, .map{
+    flex:1;
+}
