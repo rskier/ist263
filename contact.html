@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="icon" type="image/x-icon" href="portfolio_content/logo2.png">
+</head>
+<body>
+    <header>
+        <!--The top of each page including nav, logo and description-->
+        <div class="header">
+            <!--Navagation Bar, will be in navy text and turn pink on hover-->
+            <div class="nav">
+                <nav>
+                 <a class="portfolio" href="portfolio.html">PORTFOLIO</a> |
+                 <a href="about.html">ABOUT</a> |
+                <a href="contact.html">CONTACT ME</a>
+                </nav>
+            </div>
+            <!-- Description, will be in navy text -->
+            <div class="topleft">
+                <p >Graphic Designer & UX/UI Designer</p>
+             </div>
+            <!--My logo-->
+            <div class="rebeccalogo">
+                <img src="portfolio_content/logo3.png" alt="Rebecca Skier">
+            </div>
+        </div>
+        </header>  
+
+    <h1>Let's Get in Touch</h1>
+    <div class="contact">
+        <div class="myinfo">
+            <p><strong>Email:</strong><p>
+            <p>Rsskier@syr.edu</p>
+            <p><strong>Phone:</strong><p>
+            <p>201-696-6619</p>
+            <p><strong>Address:</strong><p>
+            <p>20 Briarcliff Road,<br>
+            New Jersey, 07458</p>
+        </div>
+        <div class="form">
+            <form method="post" action="https://formspree.io/f/xgeqkvgo">
+               <!--first and last name boxed will be next to eachother-->
+                <div class="formname">
+                    <div class="formfirst">
+                        <label for="firstname">First name:</label><br>
+                        <input type="text" id="firstname" name="firstname"><br>
+                    </div>
+                    <div class="formlast">
+                        <label for="lastname">Last name:</label><br>
+                        <input type="text" id="lastname" name="lastname">
+                    </div>
+               </div>
+               <!--Email, might include size tag here-->
+               <label for="email">Your email:</label><br>
+                <input type="text" id="email" name="email" class="email"><br>
+               <!--your message comment box-->
+                <label for="comments">Your message:</label><br>
+                <textarea id="comments" name="comments"></textarea><br>
+
+                Reason for contact: <br>
+                <select id="reason" name="reason">
+                    <option></option>
+                    <option value="jobinquiry">Job inquiry</option>
+                    <option value="question">Question</option>
+                    <option value="comment">Comment</option>
+                    <option value="other">Other</option>
+                </select> <br><br>
+
+                <input type="submit" value="Send message" class="send">
+            </form>
+        </div>
+    </div>
+
+<!--footer with social media and copyright info, will at bottom of every page it will have a tan background with navy icons and text-->
+<footer>
+    <div class="footer">
+        <!--copyright will be centered above icons-->
+        <div class="copyright">
+            &copy; Rebecca Skier 2022 all rights reserved
+        </div>
+        <!--icons will centered under copyright-->
+        <div class="icons">
+            <div class="email">
+               <a href="mailto:rsskier@syr.edu"><img src="portfolio_content/mail.png" alt="email icon"></a>
+            </div>
+            <div class="linkedin">
+                <a href=https://www.linkedin.com/in/rebeccaskier><img src="portfolio_content/linkedin.png" alt="LinkedIn icon"></a>
+            </div>
+            <div class="instagram">
+                <a href=https://www.instagram.com/skier.designs><img src="portfolio_content/instagram.png" alt="Instagram icon"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
