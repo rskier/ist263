@@ -1,0 +1,111 @@
+.parent {
+    font: 15px trebuchet, sans-serif;
+    display:flex;
+    align-items: center;
+}
+.left {
+    flex-basis: 50%;
+}
+.right {
+    flex-basis: 50%;
+    justify-content: flex-end;
+}
+.logo {
+    display: block;
+    margin: 0 auto
+
+}
+.row1 {
+   margin-top:20px;
+    display:flex;
+    justify-content: center;
+}
+.jennette {
+    background-color:#F7D735;
+    flex-basis:50%;
+    display:flex;
+    justify-content: center;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+.fries, .axopr {
+    background-color:#67C8C5;
+    flex-basis:50%;
+    display:flex;
+    justify-content: center;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+.row2 {
+    background-color: #EA5292;
+    display:flex;
+    justify-content: center;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+.row3 {
+    display:flex;
+    justify-content: center;
+}
+.datenight {
+    background-color: #1D1B34;
+    flex-basis:50%;
+    display:flex;
+    justify-content: center;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+.bandersnatch, .pdd {
+    background-color: #FBAF63;
+    flex-basis:50%;
+    display:flex;
+    justify-content: center;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+.row4 {
+    display:flex;
+    justify-content: center;
+    background-color: #E8E1D9;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+.row5, .row6, .row7, .nhswim, .nike, .row9, .pascackswim, .tissue, .row8 {
+    display:flex;
+    justify-content: center;
+}
+.row6 {
+    background-color: #F7D735;
+    flex-basis:100%;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+.nike {
+    background-color: #EA5292;
+    flex-basis:50%;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+.nhswim {
+    background-color:#1D1B34;
+    flex-basis:50%;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+.row8 {
+    background-color: #67C8C5;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+.pascackswim {
+    background-color: #FBAF63;
+    flex-basis:50%;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+.tissue {
+    background-color: antiquewhite;
+    flex-basis:50%;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}

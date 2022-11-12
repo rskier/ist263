@@ -1,0 +1,67 @@
+body {
+    color:#1D1B34;
+}
+.parent {
+    display:flex;
+    justify-content: space-between;
+    margin:10px;
+    padding:10px;
+}
+.right, .left {
+    display: flex;
+}
+.mywork {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.row1 {
+    display:flex;
+    width:100%;
+    justify-content: center;
+}
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:25%;
+    margin-bottom: 5%;
+}
+.Jennette {
+    background-color: #F7D735;
+    display: flex;
+    width: 100%;
+}
+.fries {
+    display: flex;
+    background-color: #67C8C5;
+    width:100%;
+    justify-content: center;
+}
+.row2 {
+    display: flex;
+    background-color: #EA5292;
+    width:100%;
+    justify-content: space-around;
+}
+.row3 {
+    display:flex;
+    width:auto;
+    justify-content: center;
+}
+.datenight {
+    display: flex;
+    background-color: #1D1B34;
+  
+}
+.bandersnatch {
+    display: flex;
+    background-color: #FBAF63;
+}
+.row4 {
+    display: flex;
+    width: 100%;
+    background-color: #E8E1D9;
+    justify-content: center;
+}
