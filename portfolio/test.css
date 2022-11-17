@@ -1,14 +1,25 @@
+header{
+    padding-top: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    color:#1D1B34;
+}
+nav a{
+    text-decoration: none;
+    color:#1D1B34;
+}
+a:hover {
+    color: #EA5292;
+}
+body {
+    width:100%;
+    Margin: 0 0;
+}
 .parent {
     font: 15px trebuchet, sans-serif;
     display:flex;
-    align-items: center;
-}
-.left {
-    flex-basis: 50%;
-}
-.right {
-    flex-basis: 50%;
-    justify-content: flex-end;
+    width:100%;
+    justify-content: space-between;
 }
 .logo {
     display: block;
@@ -19,6 +30,7 @@
    margin-top:20px;
     display:flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .jennette {
     background-color:#F7D735;
@@ -46,6 +58,7 @@
 .row3 {
     display:flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .datenight {
     background-color: #1D1B34;
@@ -73,6 +86,9 @@
 .row5, .row6, .row7, .nhswim, .nike, .row9, .pascackswim, .tissue, .row8 {
     display:flex;
     justify-content: center;
+}
+.row5, .row7, .row9 {
+    flex-wrap: wrap;
 }
 .row6 {
     background-color: #F7D735;
@@ -108,4 +124,62 @@
     flex-basis:50%;
     padding-top: 3em;
     padding-bottom: 3em;
+}
+footer{
+    background-color: #E8E1D9;
+    display:flex;
+    justify-content: space-between;
+    padding-right:2em;
+    padding-left:2em;
+    padding-top:2em;
+    padding-bottom:1em;
+    color:#1D1B34;
+}
+body {
+    flex-wrap: wrap;
+}
+
+.contact {
+    display:flex; 
+    background-color:#67C8C5;}
+
+.formname {display:flex;}
+
+@media only screen and (max-width: 600px) {
+    .left {display:none;}
+}
+
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 2px solid #EA5292; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  /* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #F7D735;
+    color: #1D1B34;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #FBAF63;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+#grad {
+    background-image: linear-gradient(to right, #EA5292, #FBAF63, #F7D735, #67C8C5 );
 }

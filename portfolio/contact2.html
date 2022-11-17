@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <header>
+        <div class="parent">
+            <div class="left">
+                <strong>Graphic & UX/UI Design</strong>
+            </div>
+            <div class="right">
+                <nav>
+                    <a href="index.html">Portfolio </a>
+                    <a href="about.html">About </a>
+                    <a href="contact.html">Contact </a>
+                </nav>
+            </div>
+        </div>
+        <!--My logo-->
+        <img class="logo" src="../portfolio/portfolio_content/headerlogo.png" alt="Rebecca Skier" width="300px">
+    </header>
+    <main><div>
+        <div class="contact">
+            <div class="myinfo">
+                <p><strong>Email:</strong><p>
+                <p>Rsskier@syr.edu</p>
+                <p><strong>Phone:</strong><p>
+                <p>201-696-6619</p>
+                <p><strong>Address:</strong><p>
+                <p>20 Briarcliff Road,</p>
+                <p>New Jersey, 07458</p>
+            </div>
+            <div class="form">
+                <form method="post" action="https://formspree.io/f/xgeqkvgo">
+                    <!--first and last name boxed will be next to eachother-->
+                    <div class="formname">
+                         <div class="formfirst">
+                             <label for="firstname">First name:</label><br>
+                             <input type="text" id="firstname" name="firstname"><br>
+                         </div>
+                         <div class="formlast">
+                             <label for="lastname">Last name:</label><br>
+                             <input type="text" id="lastname" name="lastname">
+                         </div>
+                    </div>
+                    <!--Email, might include size tag here-->
+                    <label for="email">Your email:</label><br>
+                    <input type="text" id="email" name="email" class="email"><br>
+                    <!--your message comment box-->
+                    <label for="comments">Your message:</label><br>
+                    <textarea id="comments" name="comments"></textarea><br>
+     
+                     Reason for contact: <br>
+                     <select id="reason" name="reason">
+                         <option></option>
+                         <option value="jobinquiry">Job inquiry</option>
+                         <option value="question">Question</option>
+                         <option value="comment">Comment</option>
+                         <option value="other">Other</option>
+                     </select>
+                     <input id=grad type="submit" value="Send message" class="send">
+                 </form>
+            </div>
+        </div>
+    </main></div>
+    <footer>
+        <div class="copywrite">
+            &copy; Rebecca Skier 2022 all rights reserved
+        </div>
+        <div class="icons">
+            <a href=https://www.instagram.com/skier.designs><img src="portfolio_content/instagram.png" alt="instagram logo" width="40em"></a>
+            <a href=https://www.linkedin.com/in/rebeccaskier><img src="portfolio_content/linkedin.png" alt="linkedin logo" width="40em"></a>
+            <a href="mailto:rsskier@syr.edu"><img src="portfolio_content/mail.png" alt="email icon" width="40em"></a>
+        </div> 
+    </footer>
+</body>
+</html>
