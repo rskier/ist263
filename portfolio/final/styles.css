@@ -9,6 +9,15 @@ nav a{
     text-decoration: none;
     color:#1D1B34;
 }
+#hamicon, #close {
+    font-size:3em;
+}
+.hamburger a, .hamicon {
+    display:block;
+    text-decoration: none;
+    color:#1D1B34;
+    text-align:right;
+}
 .right {
     word-spacing: .5em
 }
@@ -28,7 +37,6 @@ body {
 .logo {
     display: block;
     margin: 0 auto;
-    padding-bottom: 2em;
 }
 .row1 {
     display:flex;
@@ -158,13 +166,103 @@ footer{
     padding-right:1em;
     padding-bottom: .5em;
 }
-@media only screen and (max-width: 600px) {
+#b1, #b2, #b3, .banner {
+    display:flex;
+}
+.banner {
+    background-color: #E8E1D9;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.intro {
+    font-size:2em;
+}
+.contact {
+    display:flex;
+    justify-content: center;
+    padding-bottom: 2em;
+}
+.top, .bottom, .form{
+    display:flex;
+}
+.myinfo {
+    padding-left: 2em;
+    border-left:.15em solid #1D1B34;
+    margin:auto;
+}
+.form {
+    padding-right:2em;
+}
+.name, .phone {
+    padding-right:1em;
+}
+.map{
+    width:100%;
+    filter: grayscale(100%);
+}
+.contactbody{
+    margin-left:10em;
+    margin-right:10em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+}
+.heading {
+    display:block;
+}
+.top, .bottom{
+    padding-bottom:1em;
+}
+#name, #phone, #reason, #email{
+    min-width: 15em;
+    min-height: 2em;
+    border:none;
+    border-bottom: .15em solid #1D1B34;
+}
+#reason{
+    min-width: 15.5em;
+    min-height: 2.3em;
+    border:none;
+    border-bottom: .15em solid #1D1B34;
+}
+#message {
+    min-width:32em;
+    min-height:6em;
+    border:none;
+    border-bottom: .15em solid #1D1B34;
+}
+input[type=submit] {
+    border:none;
+    background-color: #1D1B34;
+    color:#ffffff;
+    padding-left:1em;
+    padding-right:1em;
+    padding-top:.75em;
+    padding-bottom:.75em;
+}
+.submit {
+    display:flex;
+    justify-content: flex-end;
+    padding-top:1em;
+}
+::placeholder {
+    color:#1D1B34;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media only screen and (max-width: 700px) {
    .left {display:none;}
    .left4, .right4 {display:flex;}
    .left1, .right1, .left3, .right3, .left4, .right4, .row1, .row2, .row3, .row4, .row5, .left5, .right5, .row6, .row7, .left7, .right7, .row8, .row9, .left9, .right9{flex-wrap:wrap; flex:1; justify-content: center;}
+   .parent {display:flex; justify-content: flex-end;}
+   .logo {padding-bottom:0em;}
+   .fullnav {display:none;}
  }
  @media only screen and (max-width: 1000px) {
     .row1, .row2, .row3, .row4, .row5, .row6, .row7, .row8, .row9 {flex-wrap: wrap;}
     .left1, .right1, .left3, .right3, .left5, .right5, .left7, .right7, .left9, .right9 {flex:1;}
     .left4, .right4 {display:flex;}
+  }
+  @media only screen and (min-width: 700px) {
+    .hamburger {display:none;}
   }

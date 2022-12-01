@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="myScript.js"></script>
     <link rel="icon" type="image/x-icon" href="content/work-14.png">
     <style>
         .active {color:#313131}
@@ -17,8 +18,16 @@
             <div class="left">
                 Graphic & UX/UI Design
             </div>
-            <div class="right">
-                
+            <div class="right" id="right">
+                <span id=hamicon onclick="showNav();">&#9776;</span>
+                <span id=close onclick="hideNav();">X</span>
+                <div>
+                    <nav>
+                        <a id=navLinks class=active href="portfolio.html">Portfolio </a>
+                        <a href="about.html">About </a>
+                        <a href="contact.html">Contact </a>
+                    </nav>
+                </div>
             </div>
         </div>
         <!--My logo-->

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="content/work-14.png">
+    <style>
+        .active {color:#313131}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="parent">
+            <div class="left">
+                Graphic & UX/UI Design
+            </div>
+            <div class="right">
+                <nav>
+                    <a class=active href="portfolio.html">Portfolio </a>
+                    <a href="about.html">About </a>
+                    <a href="contact.html" class="active">Contact </a>
+                </nav>
+            </div>
+        </div>
+        <!--My logo-->
+        <h1><img class="logo" src="../portfolio_content/headerlogo.png" alt="Rebecca Skier" width="300"></h1>
+    </header>
+   
+    <main>
+    <div class="aboutbody">
+        <div>
+            <img id=b1 src="content/bannersplit-02.png" alt="Rebecca Skier">
+            <div class="banner">
+                <img id=b2 src="content/bannersplit-03.png" alt="Rebecca Skier">
+                <p>
+                    <p><strong class="intro">Hi, I'm Rebecca.</strong><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos nihil minima blanditiis molestias dicta dolorem sit, ab vero dolorum suscipit nulla labore animi ducimus nemo pariatur similique ipsa, doloremque officia!</p>
+            </div>
+            <img id=b3 src="content/bannersplit-04.png" alt="Rebecca Skier">
+            <p>
+            </p>
+        </div>
+    </div>
+    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.1082723537334!2d-76.13729912017938!3d43.03915337924927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f39fba2ccc55%3A0x5e6089065251084d!2sSyracuse%20University!5e0!3m2!1sen!2sus!4v1669660951529!5m2!1sen!2sus" width="3000" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="contactbody">
+        <div class="contact">
+            
+            <div class="form">
+            <form method="post" action="https://formspree.io/f/xgeqkvgo">
+                <div class="heading">
+                    <h1>Let's Talk.</h1>
+                </div>
+                <div class="top">
+                    <div class="name">
+                        <label for="name"><strong>Full Name</strong></label><br>
+                        <input type="text" id="name" name="firstname"><br>
+                    </div>
+                    <div class="email">
+                        <label for="email"><strong>Email Address</strong></label><br>
+                        <input type="text" id="email" name="email"><br>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="phone">
+                        <label for="phone"><strong>Phone Number</strong></label><br>
+                        <input type="text" id="phone" name="phone"><br>
+                    </div>
+                    <div class="reason">
+                            <label for="reason"><strong>Reason For Contact</strong></label><br>
+                            <select id="reason" name="reason">
+                            <option></option>
+                            <option value="jobinquiry">Job inquiry</option>
+                            <option value="question">Question</option>
+                            <option value="comment">Comment</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="message">
+                    <label for="message"><strong>Message</strong></label><br>
+                    <textarea id="message" name="message"></textarea><br>
+                </div>
+                <div class="submit">
+                    <input type="submit" value="&rarr; Submit" class="send">
+                </div>
+            </div>
+            <div class="myinfo">
+                <p><strong>Email:</strong><p>
+                <p>Rsskier@syr.edu</p>
+                <p><strong>Phone:</strong><p>
+                <p>201-696-6619</p>
+                <p><strong>Address:</strong><p>
+                <p>20 Briarcliff Road,<br> New Jersey, 07458</p>
+            </div>
+        </div>
+    </div>
+    </main>
+    <footer>
+        <div class="copywrite">
+            &copy; Rebecca Skier 2022 all rights reserved
+        </div>
+        <div class="icons">
+            <a href=https://www.instagram.com/skier.designs><img src="../portfolio_content/instagram.png" alt="instagram logo" width="40"></a>
+            <a href=https://www.linkedin.com/in/rebeccaskier><img src="../portfolio_content/linkedin.png" alt="linkedin logo" width="40"></a>
+            <a href="mailto:rsskier@syr.edu"><img src="../portfolio_content/mail.png" alt="email icon" width="40"></a>
+        </div> 
+    </footer>
