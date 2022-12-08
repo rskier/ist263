@@ -6,11 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="myScript.js"></script>
     <link rel="icon" type="image/x-icon" href="content/work-14.png">
     <style>
         .active {color:#313131}
     </style>
+    <script>
+        function HamburgerOpen () {
+            document.getElementById("navLink1").style.display = "block";
+            document.getElementById("navLink2").style.display = "block";
+            document.getElementById("navLink3").style.display = "block";
+            document.getElementById("hamicon").style.display = "none";
+            document.getElementById("close").style.display = "block";
+        }
+        function HamburgerClose () {
+            document.getElementById("navLink1").style.display = "none";
+            document.getElementById("navLink2").style.display = "none";
+            document.getElementById("navLink3").style.display = "none";
+            document.getElementById("hamicon").style.display = "block";
+            document.getElementById("close").style.display = "none";
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -19,13 +34,13 @@
                 Graphic & UX/UI Design
             </div>
             <div class="right" id="right">
-                <span id=hamicon onclick="showNav();">&#9776;</span>
-                <span id=close onclick="hideNav();">X</span>
+                <div id="hamicon" onclick="HamburgerOpen();">&#9776;</div>
+                <div id="close" onclick="HamburgerClose();">X</div>
                 <div>
-                    <nav>
-                        <a id=navLinks class=active href="portfolio.html">Portfolio </a>
-                        <a href="about.html">About </a>
-                        <a href="contact.html">Contact </a>
+                    <nav id="nav">
+                        <a id=navLink1 class=active href="portfolio.html">Portfolio </a>
+                        <a id=navLink2 href="contact.html">About </a>
+                        <a id=navLink3 href="contact.html#contactpage">Contact </a>
                     </nav>
                 </div>
             </div>

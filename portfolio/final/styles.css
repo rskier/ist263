@@ -11,6 +11,11 @@ nav a{
 }
 #hamicon, #close {
     font-size:3em;
+    text-align:right;
+}
+#navLink1, #navLink2, #navLink3 {
+    text-align:right;
+    padding-bottom: .5em;
 }
 .hamburger a, .hamicon {
     display:block;
@@ -166,13 +171,15 @@ footer{
     padding-right:1em;
     padding-bottom: .5em;
 }
-#b1, #b2, #b3, .banner {
-    display:flex;
+.stats, .mystats, .ischool, .newhouse, .su {
+    display: none;
 }
 .banner {
     background-color: #E8E1D9;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display:flex;
 }
+
 .intro {
     font-size:2em;
 }
@@ -209,6 +216,11 @@ footer{
 }
 .heading {
     display:block;
+    padding-bottom: 5em;
+}
+.aboutparagraph {
+    margin: auto 0;
+    padding-right: 5em;
 }
 .top, .bottom{
     padding-bottom:1em;
@@ -239,6 +251,7 @@ input[type=submit] {
     padding-right:1em;
     padding-top:.75em;
     padding-bottom:.75em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .submit {
     display:flex;
@@ -250,13 +263,162 @@ input[type=submit] {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.infoemail, .infophone, .infoaddress {
+    flex:1;
+}
+.infobox {
+    box-shadow: .09em .09em .02em #E8E1D9;;
+    color:#1D1B34;
+    padding: 1em;
+}
+.infosmaller { 
+    margin-bottom:2em;
+    box-shadow: .09em .09em 2em #E8E1D9;;
+    border-style: solid;
+    border-width:.25em;
+    border-color:#E8E1D9;
+    border-radius: .5em;
+    padding-top: 0em;
+}
+
+.reachme h2, .form h2 {
+    font-size:2em;
+    background-image: linear-gradient(to right, #FBAF63, #F7D735);
+    border-style: solid;
+    border-radius:.15em;
+    border-color:#E8E1D9;
+    padding:1em;
+    color: #ffffff;
+    margin:0em;
+}
+.resume {
+    background-color: #1D1B34; 
+    color:#ffffff;
+    padding-bottom: 2em;
+    font-size: 1.15em;
+}
+.myresume {
+    display:flex;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 1em;
+}
+
+.resumebutton:hover {
+    background-color: #EA5292;
+    color: #ffffff;
+}
+.resumebutton {
+    background-color: #1D1B34;
+    color:#E8E1D9;
+    padding:.5em;
+    padding-right:2em;
+    padding-left:2em;
+    border-radius: 5em;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin: auto 0;
+}
+#b4 {
+    min-width: max-content;
+    min-height: max-content;
+    object-fit: scale-down;
+}
+#b5 {
+    min-width: max-content;
+    min-height: max-content;
+    object-fit: scale-down;
+    vertical-align: top;
+
+}
+.aboutflexparent {
+    background-color: #EA5292;
+    display:flex;
+    flex:1;
+}
+.aboutflex {
+    justify-content: space-around;
+    background-color: #ffffff;
+    display:flex;
+    color:#1D1B34;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    flex:2;
+    margin-left:5em;
+    margin-right:5em;
+    margin-bottom:5em;
+    box-shadow: .09em .09em 1em #1D1B34;
+}
+.af1, .af2, .af3 {
+    flex:2;
+    padding: 2em;
+}
+.af2 {
+    border-left: solid .15em #E8E1D9;
+    border-right: solid .15em #E8E1D9;
+}
+.lm {
+    background-color: #1D1B34;
+    color:#ffffff;
+    padding:.5em;
+    padding-right:1em;
+    padding-left:1em;
+    border-radius: 5em;
+    font-size: .75em;
+    text-align: center;
+    margin: auto 0;
+}
+.lm:hover {
+    background-color: #EA5292;
+}
+.year {
+    color:#8c8c8c;
+    font-size: .855em;
+}
+.pink {
+    background-color: #EA5292;
+}
+.abouttop {
+    display:flex;
+}
+.stats {
+    display:flex;
+    justify-content: space-evenly;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.su, .ischool, .newhouse {
+    flex-basis:20%;
+    background-color: #F7D735;
+    padding-top:2em;
+    padding-bottom:2em;
+}
+.stat {font-size: 4em;}
+.mystats {display:flex; padding-left:10em;}
+
+
 @media only screen and (max-width: 700px) {
    .left {display:none;}
    .left4, .right4 {display:flex;}
    .left1, .right1, .left3, .right3, .left4, .right4, .row1, .row2, .row3, .row4, .row5, .left5, .right5, .row6, .row7, .left7, .right7, .row8, .row9, .left9, .right9{flex-wrap:wrap; flex:1; justify-content: center;}
    .parent {display:flex; justify-content: flex-end;}
    .logo {padding-bottom:0em;}
-   .fullnav {display:none;}
+   #hamicon {display:block;}
+   #close {display:none;}
+   #navLink1, #navLink2, #navLink3 {display:none;}
+   .myinfo {display:none;}
+   .top, .bottom {display:block; margin:0em; padding:0em;}
+   #phone, #email, #reason, #name {min-width: 32.5em; min-height:2.5em; margin-bottom:2em; border:none; background-color:#E8E1D9;}
+   #message {background-color: #E8E1D9; border:none;}
+   .normalform {
+    border-style:solid;
+    border-width: .02em;
+    box-shadow: .09em .09em .02em #E8E1D9;
+    border-color: #E8E1D9;
+    }
+    .formbody {padding:1em;}
+    .submit {display:flex; justify-content: center;}
+    input[type=submit] {padding:1em; padding-left:6em; padding-right:6em; background-image: linear-gradient(to right, #FBAF63, #F7D735); font-weight:bold; color:#1D1B34; border-radius: 5em; box-shadow: .09em .09em 2em #E8E1D9;}
+    input[type=submit]:hover {background-image:none; background-color: #1D1B34; color:#ffffff;}
  }
  @media only screen and (max-width: 1000px) {
     .row1, .row2, .row3, .row4, .row5, .row6, .row7, .row8, .row9 {flex-wrap: wrap;}
@@ -264,5 +426,9 @@ input[type=submit] {
     .left4, .right4 {display:flex;}
   }
   @media only screen and (min-width: 700px) {
-    .hamburger {display:none;}
+    #hamicon {display:none;}
+    #close {display:none;}
+    nav {display:block;}
+    .infosmaller {display:none;}
+    .formtitle {display:none;}
   }
