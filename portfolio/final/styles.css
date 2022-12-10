@@ -223,7 +223,7 @@ footer{
     display:block;
     padding-bottom: 5em;
 }
-pre {
+pre span {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .aboutparagraph {
