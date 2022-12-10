@@ -5,6 +5,9 @@ header{
     color:#1D1B34;
     letter-spacing: .1em;
 }
+a {
+    text-decoration: none;
+}
 nav a{
     text-decoration: none;
     color:#1D1B34;
@@ -258,6 +261,9 @@ input[type=submit] {
     justify-content: flex-end;
     padding-top:1em;
 }
+input[type=submit]:hover {
+    background-color: #EA5292;
+}
 ::placeholder {
     color:#1D1B34;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -318,6 +324,24 @@ input[type=submit] {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     margin: auto 0;
+    font-size: .75em;
+}
+.contactbutton:hover {
+    background-color: #EA5292;
+    color: #1D1B34;
+}
+.contactbutton {
+    background-color:#ffffff;
+    color:#1D1B34;
+    padding:.5em;
+    padding-right:2em;
+    padding-left:2em;
+    border-radius: 5em;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin: auto 0;
+    font-size:.75em;
+    text-decoration: none;
 }
 #b4 {
     min-width: max-content;
@@ -366,9 +390,11 @@ input[type=submit] {
     font-size: .75em;
     text-align: center;
     margin: auto 0;
+    text-decoration:none;
 }
 .lm:hover {
     background-color: #EA5292;
+    color: #ffffff;
 }
 .year {
     color:#8c8c8c;
@@ -395,6 +421,133 @@ input[type=submit] {
 .stat {font-size: 4em;}
 .mystats {display:flex; padding-left:10em;}
 
+.yellow {
+    background-color: #F7D735;
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding:1em;
+    padding-right:3em;
+    padding-left:3em;
+}
+.courses, .skills {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #1D1B34;
+}
+.skills {
+    margin:auto;
+    flex:1;
+}
+.courses {
+    flex:2;
+    padding-right:5em;
+}
+.ist263, .des101, .cmd104, .vis201 {
+    background-color: #ffffff;
+    border-left: solid .5em #1D1B34;
+    padding:.5em;
+    margin-bottom:.25em;
+}
+.grade {
+    color: #8c8c8c;
+    font-size: .75em;
+}
+.courseinfo {
+    font-size:.90em;
+}
+.skillsflex {
+    padding:1.5em;
+    border: solid .25em #1D1B34;
+    height:100%;
+}
+.backbar {
+    display:flex;
+    background-color: #1D1B34;
+    width:100%;
+    margin-bottom: .5em;
+}
+.illustrator {
+    background-color: #EA5292;
+    width:90%;
+    color:#ffffff;
+    font-size: .75em;;
+    text-align: right;
+    padding-right:.5em;
+    padding-top: .25em;
+    padding-bottom: .25em;
+}
+.photoshop {
+    background-color: #EA5292;
+    width:80%;
+    color:#ffffff;
+    font-size: .75em;;
+    text-align: right;
+    padding-right:.5em;
+    padding-top: .25em;
+    padding-bottom: .25em;
+}
+.indesign {
+    background-color: #EA5292;
+    width:60%;
+    color:#ffffff;
+    font-size: .75em;;
+    text-align: right;
+    padding-right:.5em;
+    padding-top: .25em;
+    padding-bottom: .25em;
+}
+.premiere {
+    background-color: #EA5292;
+    width:70%;
+    color:#ffffff;
+    font-size: .75em;;
+    text-align: right;
+    padding-right:.5em;
+    padding-top: .25em;
+    padding-bottom: .25em;
+}
+.xd {
+    background-color: #EA5292;
+    width:65%;
+    color:#ffffff;
+    font-size: .75em;;
+    text-align: right;
+    padding-right:.5em;
+    padding-top: .25em;
+    padding-bottom: .25em;
+}
+.html {
+    background-color: #EA5292;
+    width:60%;
+    color:#ffffff;
+    font-size: .75em;;
+    text-align: right;
+    padding-right:.5em;
+    padding-top: .25em;
+    padding-bottom: .25em;
+}
+.css {
+    background-color: #EA5292;
+    width:60%;
+    color:#ffffff;
+    font-size: .75em;;
+    text-align: right;
+    padding-right:.5em;
+    padding-top: .25em;
+    padding-bottom: .25em;
+}
+.javascript {
+    background-color: #EA5292;
+    width:20%;
+    color:#ffffff;
+    font-size: .75em;;
+    text-align: right;
+    padding-right:.5em;
+    padding-top: .25em;
+    padding-bottom: .25em;
+}
+.mobileparagraph {
+    display:none;
+}
 
 @media only screen and (max-width: 700px) {
    .left {display:none;}
@@ -418,12 +571,30 @@ input[type=submit] {
     .formbody {padding:1em;}
     .submit {display:flex; justify-content: center;}
     input[type=submit] {padding:1em; padding-left:6em; padding-right:6em; background-image: linear-gradient(to right, #FBAF63, #F7D735); font-weight:bold; color:#1D1B34; border-radius: 5em; box-shadow: .09em .09em 2em #E8E1D9;}
-    input[type=submit]:hover {background-image:none; background-color: #1D1B34; color:#ffffff;}
+    .aboutflex {
+        display:block;
+    }
+    .mobileparagraph {
+        display:block;
+        padding:2em;
+        background-color: #ffffff;
+        border-top:none;
+        border-bottom: .20em solid #1D1B34;
+    }
+    .aboutparagraph {display:none;}
+    .af1, .af2 {border-bottom: .15em solid #1D1B34;}
+    .contactbutton {background-color: #E8E1D9;}
+    .yellow {display:block; margin:auto; width:90%;}
+    .ist263, .des101, .cmd104, .vis201 {border:none;}
+    .courses {justify-content: center;}
+    .skillsflex {border:none; max-width: 75%;;}
+
  }
  @media only screen and (max-width: 1000px) {
     .row1, .row2, .row3, .row4, .row5, .row6, .row7, .row8, .row9 {flex-wrap: wrap;}
     .left1, .right1, .left3, .right3, .left5, .right5, .left7, .right7, .left9, .right9 {flex:1;}
     .left4, .right4 {display:flex;}
+
   }
   @media only screen and (min-width: 700px) {
     #hamicon {display:none;}

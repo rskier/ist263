@@ -7,9 +7,22 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="content/work-14.png">
-    <style>
-        .active {color:#313131}
-    </style>
+    <script>
+        function HamburgerOpen () {
+            document.getElementById("navLink1").style.display = "block";
+            document.getElementById("navLink2").style.display = "block";
+            document.getElementById("navLink3").style.display = "block";
+            document.getElementById("hamicon").style.display = "none";
+            document.getElementById("close").style.display = "block";
+        }
+        function HamburgerClose () {
+            document.getElementById("navLink1").style.display = "none";
+            document.getElementById("navLink2").style.display = "none";
+            document.getElementById("navLink3").style.display = "none";
+            document.getElementById("hamicon").style.display = "block";
+            document.getElementById("close").style.display = "none";
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -17,12 +30,16 @@
             <div class="left">
                 Graphic & UX/UI Design
             </div>
-            <div class="right">
-                <nav id="nav">
-                    <a id=navLink1 class=active href="portfolio.html">Portfolio </a>
-                    <a id=navLink2 href="contact.html">About </a>
-                    <a id=navLink3 href="contact.html#contactpage">Contact </a>
-                </nav>
+            <div class="right" id="right">
+                <div id="hamicon" onclick="HamburgerOpen();">&#9776;</div>
+                <div id="close" onclick="HamburgerClose();">X</div>
+                <div>
+                    <nav id="nav">
+                        <a id=navLink1 class=active href="portfolio.html">Portfolio </a>
+                        <a id=navLink2 href="contact.html">About </a>
+                        <a id=navLink3 href="contact.html#contactpage">Contact </a>
+                    </nav>
+                </div>
             </div>
         </div>
         <!--My logo-->
@@ -34,24 +51,96 @@
         <div class="aboutop">
             <div class="banner">
                  <img id=b4 src="content/banner2-02.png">
-                    <p class="aboutparagraph"><strong class="intro">Hi, I'm Rebecca.</strong><br><br>My name is Rebecca Skier and I'm a 3rd generation Syracuse University student. I'm passionate about design and experienced working with Adobe softwares, specifically Illustrator. I am always looking for new challenges and oppurtunities to put my skills to use.<br><br><br><span class="resumebutton">View Resume</span></p>
+                    <p class="aboutparagraph"><strong class="intro">Hi, I'm Rebecca.</strong><br><br>My name is Rebecca Skier and I'm a 3rd generation Syracuse University student. I'm passionate about design and experienced working with Adobe softwares, specifically Illustrator. I am always looking for new challenges and oppurtunities to put my skills to use.<br><br><br><a href="../final/content/rskierresume.pdf" class="resumebutton" target="_">View Resume</a> <a href="#contactpage" class="contactbutton">Contact Me</a></p>
             </div>
             <div class="pink">
             <img id="b5" src="content/banner2-03.png">
             </div>
             <div class="aboutflexparent">
                 <div class="aboutflex">
+                    <div class="mobileparagraph">
+                        <p><strong class="intro">Hi, I'm Rebecca.</strong><br><br>My name is Rebecca Skier and I'm a 3rd generation Syracuse University student. I'm passionate about design and experienced working with Adobe softwares, specifically Illustrator. I am always looking for new challenges and oppurtunities to put my skills to use.<br><br><br><a href="../final/content/rskierresume.pdf" class="resumebutton" target="_">View Resume</a> <a href="#contactpage" class="contactbutton">Contact Me</a></p>
+                    </div>
                     <div class="af1">
-                        <strong>Syracuse <br>University</strong><br><br><span class=year>2021-2025</span><br>3.9 Cumilative GPA<br><br><span id="syr" class="lm">Learn More</span>
+                        <strong>Syracuse <br>University</strong><br><br><span class=year>2021-2025</span><br>3.9 Cumulative GPA<br><br><a href="https://www.syracuse.edu/about/" id="syr" class="lm" target="_">Learn More</a>
                     </div>
                     <div class="af2">
-                        <strong>Newhouse School <br>of Public Communications</strong><br><br><span class=year>2021-2025</span><br>Graphic Design (B.S.)<br><br><span id="nh" class="lm">Learn More</span>
+                        <strong>Newhouse School <br>of Public Communications</strong><br><br><span class=year>2021-2025</span><br>Graphic Design (B.S.)<br><br><a href="https://newhouse.syr.edu/academics/graphic-design/" id="nh" class="lm" target="_">Learn More</a>
                     </div> 
                     <div class="af3">
-                        <strong>Information <br>School</strong><br><br><span class=year>2021-2025</span><br>Web Design Management (B.S.)<br><br><span id="is" class="lm">Learn More</span>
+                        <strong>Information <br>School</strong><br><br><span class=year>2021-2025</span><br>Web Design Management (B.S.)<br><br><a href="https://ischool.syr.edu/academics/information-management-and-technology-bachelors-degree/" id="is" class="lm" target="_">Learn More</a>
+                    </div>
+                </div>
+
+        </div>
+        
+        <div class="yellow">
+        <div class="courses">
+            <h1>Coursework</h1>
+            <div class="ist263">
+                <strong>IST 263 - Intro to Front-End Web Dev</strong><br><span class="grade">Grade: A</span><br><span class="courseinfo"></span>Principles for construction and publication of multimedia documents for the World Wide Web. Incorporate a user-based approach to planning, design, implementation, and management in distributed network environments.
+            </div>
+            <div class="des101">
+                <strong>DES 101 - Digital Tools for Designers I</strong><br><span class="grade">Grade: A</span><br><span class="courseinfo">Introduction to digital design software processes to create and manipulate vector and raster-based imagery and gain an understanding of publication software for layout and printed media</span>
+            </div>
+            <div class="cmd104">
+                <strong>CMD 104 - Fundamentals of Communications Design</strong><br><span class="grade">Grade: A</span><br><span class="courseinfo">Introduction to processes, materials, methods required for creation and production of visual communications. Typography, image creation, communication, layout.</span>
+            </div>
+            <div class="vis201">
+                <strong>VIS 201 - Introduction to Photography for Multimedia</strong><br><span class="grade">Grade: A</span><br><span class="courseinfo">Explores basic creative principles including composition and lighting; provides technical instruction; develops workflow and post-production processes; and teaches basic editing principles-all in the context of communications photography and multimedia storytelling.</span>
+            </div>
+        </div>
+        <div class="skills">
+            <div class="skillsflex">
+            <h1>Skills</h1>
+                
+                Adobe Illustrator
+                <div class="backbar">
+                    <div class="illustrator">90%</div>
+                </div>
+                Adobe Photoshop
+                <div class="backbar">
+                    <div class="photoshop">80%</div>
+                </div>
+                Adobe InDesign
+                <div class="backbar">
+                    <div class="indesign">
+                        60%
+                    </div>
+                </div>
+                Adobe Premiere
+                <div class="backbar">
+                    <div class="premiere">
+                        70%
+                    </div>
+                </div>
+                Adobe Xd
+                <div class="backbar">
+                    <div class="xd">
+                        65%
+                    </div>
+                </div>
+                HTML
+                <div class="backbar">
+                    <div class="html">
+                        60%
+                    </div>
+                </div>
+                CSS
+                <div class="backbar">
+                    <div class="css">
+                        60%
+                    </div>
+                </div>
+                Javascript
+                <div class="backbar">
+                    <div class="javascript">
+                        20%
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 
     </div>
     <iframe class="map" id="contactpage" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.1082723537334!2d-76.13729912017938!3d43.03915337924927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f39fba2ccc55%3A0x5e6089065251084d!2sSyracuse%20University!5e0!3m2!1sen!2sus!4v1669660951529!5m2!1sen!2sus" width="3000" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
