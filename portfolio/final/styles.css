@@ -181,6 +181,8 @@ footer{
     background-color: #E8E1D9;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display:flex;
+    flex-basis:100%;
+    width:100%;
 }
 
 .intro {
@@ -221,9 +223,17 @@ footer{
     display:block;
     padding-bottom: 5em;
 }
+pre {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 .aboutparagraph {
     margin: auto 0;
     padding-right: 5em;
+    position:relative;
+    word-break:keep-all;
+}
+.resumebutton {
+    margin:2em;
 }
 .top, .bottom{
     padding-bottom:1em;
@@ -397,8 +407,10 @@ input[type=submit]:hover {
     color: #ffffff;
 }
 .year {
-    color:#8c8c8c;
     font-size: .855em;
+    color: #1D1B34;
+    padding: .2em;
+    text-decoration: underline;
 }
 .pink {
     background-color: #EA5292;
@@ -448,7 +460,7 @@ input[type=submit]:hover {
     margin-bottom:.25em;
 }
 .grade {
-    color: #8c8c8c;
+    color: #1D1B34;
     font-size: .75em;
 }
 .courseinfo {
@@ -468,7 +480,7 @@ input[type=submit]:hover {
 .illustrator {
     background-color: #EA5292;
     width:90%;
-    color:#ffffff;
+    color:#1D1B34;
     font-size: .75em;;
     text-align: right;
     padding-right:.5em;
@@ -478,7 +490,7 @@ input[type=submit]:hover {
 .photoshop {
     background-color: #EA5292;
     width:80%;
-    color:#ffffff;
+    color:#1D1B34;
     font-size: .75em;;
     text-align: right;
     padding-right:.5em;
@@ -488,7 +500,7 @@ input[type=submit]:hover {
 .indesign {
     background-color: #EA5292;
     width:60%;
-    color:#ffffff;
+    color:#1D1B34;
     font-size: .75em;;
     text-align: right;
     padding-right:.5em;
@@ -498,7 +510,7 @@ input[type=submit]:hover {
 .premiere {
     background-color: #EA5292;
     width:70%;
-    color:#ffffff;
+    color:#1D1B34;
     font-size: .75em;;
     text-align: right;
     padding-right:.5em;
@@ -508,7 +520,7 @@ input[type=submit]:hover {
 .xd {
     background-color: #EA5292;
     width:65%;
-    color:#ffffff;
+    color:#1D1B34;
     font-size: .75em;;
     text-align: right;
     padding-right:.5em;
@@ -518,7 +530,7 @@ input[type=submit]:hover {
 .html {
     background-color: #EA5292;
     width:60%;
-    color:#ffffff;
+    color:#1D1B34;
     font-size: .75em;;
     text-align: right;
     padding-right:.5em;
@@ -528,7 +540,7 @@ input[type=submit]:hover {
 .css {
     background-color: #EA5292;
     width:60%;
-    color:#ffffff;
+    color:#1D1B34;
     font-size: .75em;;
     text-align: right;
     padding-right:.5em;
@@ -538,7 +550,7 @@ input[type=submit]:hover {
 .javascript {
     background-color: #EA5292;
     width:20%;
-    color:#ffffff;
+    color:#1D1B34;
     font-size: .75em;;
     text-align: right;
     padding-right:.5em;
@@ -594,6 +606,20 @@ input[type=submit]:hover {
     .row1, .row2, .row3, .row4, .row5, .row6, .row7, .row8, .row9 {flex-wrap: wrap;}
     .left1, .right1, .left3, .right3, .left5, .right5, .left7, .right7, .left9, .right9 {flex:1;}
     .left4, .right4 {display:flex;}
+
+  }
+  @media only screen and (max-width: 900px) {
+    .aboutflex {
+        display:block;
+    }
+    .mobileparagraph {
+        display:block;
+        padding:2em;
+        background-color: #ffffff;
+        border-top:none;
+        border-bottom: .20em solid #1D1B34;
+    }
+    .aboutparagraph {display:none;}
 
   }
   @media only screen and (min-width: 700px) {
