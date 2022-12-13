@@ -365,6 +365,22 @@ input[type=submit]:hover {
     vertical-align: top;
 
 }
+.fulltop {
+    display:flex;
+}
+.tanparentflex, .pinkparentflex {
+    display:flex;
+    flex-basis:100%;
+}
+.parent, .pink {
+    display:flex;
+}
+.pinkparentflex {
+    background-color: #EA5292;
+}
+.tanparentflex {
+    background-color:#E8E1D9;
+}
 .aboutflexparent {
     background-color: #EA5292;
     display:flex;
@@ -416,6 +432,7 @@ input[type=submit]:hover {
 }
 .abouttop {
     display:flex;
+    flex-basis: 100%;
 }
 .stats {
     display:flex;
