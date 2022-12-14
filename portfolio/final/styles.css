@@ -1,3 +1,4 @@
+
 header{
     padding-top: 2em;
     padding-left: 2em;
@@ -358,6 +359,10 @@ input[type=submit]:hover {
     min-height: max-content;
     object-fit: scale-down;
 }
+.aboutbody {
+    width:100%;
+    background-color: #E8E1D9;
+}
 #b5 {
     min-width: max-content;
     min-height: max-content;
@@ -370,16 +375,14 @@ input[type=submit]:hover {
 }
 .tanparentflex, .pinkparentflex {
     display:flex;
-    flex-basis:100%;
+    flex:1;
+    padding-left:5em;
 }
 .parent, .pink {
     display:flex;
 }
 .pinkparentflex {
     background-color: #EA5292;
-}
-.tanparentflex {
-    background-color:#E8E1D9;
 }
 .aboutflexparent {
     background-color: #EA5292;
@@ -433,6 +436,7 @@ input[type=submit]:hover {
 .abouttop {
     display:flex;
     flex-basis: 100%;
+    background-color: #E8E1D9;
 }
 .stats {
     display:flex;
@@ -622,9 +626,15 @@ input[type=submit]:hover {
     .row1, .row2, .row3, .row4, .row5, .row6, .row7, .row8, .row9 {flex-wrap: wrap;}
     .left1, .right1, .left3, .right3, .left5, .right5, .left7, .right7, .left9, .right9 {flex:1;}
     .left4, .right4 {display:flex;}
+    .heading h1 {text-align: center;}
+    #b4, #b5 {display:none;}
+    .aboutflex {margin-top:5em;}
+    .yellow {justify-content: center; margin: 0 auto;}
+    .form {margin: 0 auto; justify-content: center; padding-left:2em;}
+
 
   }
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 1000px) {
     .aboutflex {
         display:block;
     }
