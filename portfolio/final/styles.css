@@ -116,6 +116,7 @@ body {
     justify-content: center;
     padding:2em;
 }
+.left-1 img {background-color: #ffffff;}
 .left-1{
     background-color:#FBAF63;
     justify-content: center;
@@ -148,6 +149,9 @@ body {
     flex-wrap: wrap;
 }
 
+#shadow{
+    box-shadow: .35em .35em 10px #0000005f;
+}
 .left0{
     padding-right:2em;
 }
